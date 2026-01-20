@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['GoogleSheets_CreateSpreadsheet', 'GoogleSheets_UpdateCells', 'GoogleSheets_WriteToCell'];
+const TOOLS_WITH_APPROVAL = ['GoogleSheets_AddNoteToCell', 'GoogleSheets_CreateSpreadsheet', 'GoogleSheets_UpdateCells', 'GoogleSheets_WriteToCell'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
